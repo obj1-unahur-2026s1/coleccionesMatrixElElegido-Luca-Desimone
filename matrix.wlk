@@ -11,8 +11,14 @@ object  neo  {
 
 object morfeo {
   var vitalidad = 8
-  var descansado = true 
+  var descansado = true
+
   method saltar() {
-   
+    if (descansado == true) {
+      descansado = false
+    } else {
+      descansado = true
+    }
+    vitalidad = vitalidad - 1
   }
 }
