@@ -30,3 +30,9 @@ object trinity {
     vitalidad = vitalidad + 0
   }
 }
+
+object nave {
+  var pasajeros = [neo,morfeo,trinity]
+
+  method cantidadDePasajeros() = pasajeros.size() 
+}
