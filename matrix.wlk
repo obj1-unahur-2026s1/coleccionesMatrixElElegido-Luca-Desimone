@@ -35,4 +35,6 @@ object nave {
   var pasajeros = [neo,morfeo,trinity]
 
   method cantidadDePasajeros() = pasajeros.size() 
+
+ method maximaVitalidad() = pasajeros.max({ p => p.vitalidad() }).vitalidad()
 }
